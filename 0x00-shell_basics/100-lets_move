@@ -1,2 +1,6 @@
 #!/bin/bash
-mv [[:upper:]]* /tmp/u
+for file in [[:upper:]]*; do
+    if [ -f "$file" ]; then
+        mv "$file" /tmp/u/
+    fi
+done
