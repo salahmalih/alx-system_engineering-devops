@@ -1,2 +1,2 @@
 #!/bin/bash
-mv [A-Z]* /tmp/u/
+mv $(ls -1d [A-Z]* | sort) /tmp/u/
