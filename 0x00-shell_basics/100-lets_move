@@ -1,2 +1,2 @@
 #!/bin/bash
-mv $(ls -1d [A-Z]* | sort) /tmp/u/
+mv [[:upper:]]* /tmp/u
