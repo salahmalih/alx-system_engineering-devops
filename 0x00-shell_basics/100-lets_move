@@ -1,3 +1,2 @@
 #!/bin/bash
 mv /tmp/sym/[A-Z]* /tmp/u/
-
