@@ -1,2 +1,2 @@
 #!/bin/bash
-mv /tmp/[B]est /tmp/[i]sSoCool /tmp/[S]chool /tmp/u/
+mv [[:upper:]]* /tmp/u
