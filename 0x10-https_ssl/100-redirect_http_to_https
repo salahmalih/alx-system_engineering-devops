@@ -7,7 +7,7 @@ global
         user haproxy
         group haproxy
         daemon
-
+        tune.ssl.default-dh-param 2048
         # Default SSL material locations
         ca-base /etc/ssl/certs
         crt-base /etc/ssl/private
@@ -40,11 +40,11 @@ frontend wordtech-frontend
         default_backend wordtech-backend
 
 frontend wordtech-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/wordtech.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.wordtech.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend wordtech-backend
 
 backend wordtech-backend
         balance roundrobin
         server 529142-web-01 34.201.61.216:80 check
-        server 529143-web-02 34.207.212.77:80 check
+        server 529142-web-02 34.207.212.77:80 check
