@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """This module have a function that quaries the Reddit API
 and returns number of subscribers for a given subreddit"""
-
-
 from requests import get
 
 
